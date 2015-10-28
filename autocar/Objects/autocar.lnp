@@ -1,0 +1,15 @@
+--cpu Cortex-M4.fp
+".\objects\main.o"
+".\objects\stepper.o"
+".\objects\delay.o"
+".\objects\usart_config.o"
+".\objects\startup_stm32f429_439xx.o"
+".\objects\system_stm32f4xx.o"
+".\objects\misc.o"
+".\objects\stm32f4xx_gpio_1.o"
+".\objects\stm32f4xx_rcc_1.o"
+".\objects\stm32f4xx_usart.o"
+--strict --scatter ".\Objects\autocar.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\autocar.map" -o .\Objects\autocar.axf
